@@ -15,6 +15,7 @@
 
 -(void)jsonFoursquare
 {
+  
     NSError *error;
     //NSString *str = @"https://api.forecast.io/forecast/2f1c35dd930d9bc505e6399e60f3e4a7/-30.043481,%20-51.213194";
     NSString *str = [NSString stringWithFormat:@"https://api.forecast.io/forecast/2f1c35dd930d9bc505e6399e60f3e4a7/%@,%@",self.latitude,self.longitude];
@@ -48,6 +49,13 @@
     
     
 }
+
+//-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+//{
+//    CLLocation *location = newLocation;
+//    self.latitude = [NSString stringWithFormat:@"%f",location.coordinate.latitude];
+//    self.longitude = [NSString stringWithFormat:@"%f",location.coordinate.longitude];
+//}
 
 
 @end

@@ -26,7 +26,7 @@
 -(void)fillLabels
 {
    
-    ALIJSON *getJSON = [[ALIJSON alloc]init];\
+    ALIJSON *getJSON = [[ALIJSON alloc]init];
     [getJSON getLocations];
     [getJSON jsonFoursquare];
     self.lblTemp.text = [NSString stringWithFormat:@"%.1f",getJSON.celsiusTemp];
