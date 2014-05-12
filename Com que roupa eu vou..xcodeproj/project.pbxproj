@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825D3BBE192152C300CCD8E9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825D3BBD192152C300CCD8E9 /* CoreLocation.framework */; };
 		8288C94B191C167100F4E68D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8288C94A191C167100F4E68D /* Foundation.framework */; };
 		8288C94D191C167100F4E68D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8288C94C191C167100F4E68D /* CoreGraphics.framework */; };
 		8288C94F191C167100F4E68D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8288C94E191C167100F4E68D /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		8288C96C191C167100F4E68D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8288C94E191C167100F4E68D /* UIKit.framework */; };
 		8288C974191C167100F4E68D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8288C972191C167100F4E68D /* InfoPlist.strings */; };
 		8288C976191C167100F4E68D /* Com_que_roupa_eu_vou_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8288C975191C167100F4E68D /* Com_que_roupa_eu_vou_Tests.m */; };
+		8288C981191C16C700F4E68D /* ALIJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8288C980191C16C700F4E68D /* ALIJSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		825D3BBD192152C300CCD8E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8288C947191C167100F4E68D /* Com que roupa eu vou..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Com que roupa eu vou..app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8288C94A191C167100F4E68D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8288C94C191C167100F4E68D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +56,8 @@
 		8288C971191C167100F4E68D /* Com que roupa eu vou.Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Com que roupa eu vou.Tests-Info.plist"; sourceTree = "<group>"; };
 		8288C973191C167100F4E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8288C975191C167100F4E68D /* Com_que_roupa_eu_vou_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Com_que_roupa_eu_vou_Tests.m; sourceTree = "<group>"; };
+		8288C97F191C16C700F4E68D /* ALIJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIJSON.h; sourceTree = "<group>"; };
+		8288C980191C16C700F4E68D /* ALIJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALIJSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825D3BBE192152C300CCD8E9 /* CoreLocation.framework in Frameworks */,
 				8288C94D191C167100F4E68D /* CoreGraphics.framework in Frameworks */,
 				8288C94F191C167100F4E68D /* UIKit.framework in Frameworks */,
 				8288C94B191C167100F4E68D /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		8288C949191C167100F4E68D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				825D3BBD192152C300CCD8E9 /* CoreLocation.framework */,
 				8288C94A191C167100F4E68D /* Foundation.framework */,
 				8288C94C191C167100F4E68D /* CoreGraphics.framework */,
 				8288C94E191C167100F4E68D /* UIKit.framework */,
@@ -115,6 +122,8 @@
 				8288C959191C167100F4E68D /* ALIAppDelegate.h */,
 				8288C95A191C167100F4E68D /* ALIAppDelegate.m */,
 				8288C95C191C167100F4E68D /* Main.storyboard */,
+				8288C97F191C16C700F4E68D /* ALIJSON.h */,
+				8288C980191C16C700F4E68D /* ALIJSON.m */,
 				8288C95F191C167100F4E68D /* ALIViewController.h */,
 				8288C960191C167100F4E68D /* ALIViewController.m */,
 				8288C962191C167100F4E68D /* Images.xcassets */,
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8288C981191C16C700F4E68D /* ALIJSON.m in Sources */,
 				8288C961191C167100F4E68D /* ALIViewController.m in Sources */,
 				8288C957191C167100F4E68D /* main.m in Sources */,
 				8288C95B191C167100F4E68D /* ALIAppDelegate.m in Sources */,
@@ -457,6 +467,7 @@
 				8288C97B191C167100F4E68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8288C97C191C167100F4E68D /* Build configuration list for PBXNativeTarget "Com que roupa eu vou.Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				8288C97E191C167100F4E68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

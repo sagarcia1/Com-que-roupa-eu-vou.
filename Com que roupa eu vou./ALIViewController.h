@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ALIViewController : UIViewController
+@interface ALIViewController : UIViewController<CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *lblTemp;
+@property (weak, nonatomic) IBOutlet UILabel *lblSensTerm;
+@property (weak, nonatomic) IBOutlet UILabel *lblRoupa;
+@property (weak, nonatomic) IBOutlet UILabel *lblBlusao;
+@property (weak, nonatomic) IBOutlet UILabel *lblCasaco;
+@property (weak, nonatomic) IBOutlet UILabel *lblCalca;
+@property (weak, nonatomic) IBOutlet UILabel *lblGorro;
+@property (weak, nonatomic) IBOutlet UILabel *lblLuva;
+
+-(void)fillLabels;
+
+
 
 @end
