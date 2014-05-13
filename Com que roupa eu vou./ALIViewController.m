@@ -10,7 +10,11 @@
 #import "ALIJSON.h"
 #import <CoreLocation/CoreLocation.h>
 
-@interface ALIViewController ()
+@interface ALIViewController ()<CLLocationManagerDelegate>
+{
+    float celsius;
+    float grauReal;
+}
 
 @end
 
@@ -19,39 +23,96 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self fillLabels];
+    [self getLocations];
+ 
+    
+   
+  
     
 }
 
 -(void)fillLabels
 {
-   
-    ALIJSON *getJSON = [[ALIJSON alloc]init];
-    [getJSON getLocations];
-    [getJSON jsonFoursquare];
-    self.lblTemp.text = [NSString stringWithFormat:@"%.1f",getJSON.celsiusTemp];
-    self.lblSensTerm.text = [NSString stringWithFormat:@"%.1f",getJSON.sensTerm];
-    float temp = getJSON.sensTerm;
-    if (temp <0) {
-        self.lblRoupa.text = @"UnderWear ou segunda pele";
-        self.lblBlusao.text =@"Fleece";
-        self.lblCasaco.text =@"Casaco Impermeável ou corta vento";
-        self.lblCalca.text = @"Calca Impermeável";
-        self.lblGorro.text = @"Gorro";
-        self.lblLuva.text = @"Luva";
-        
-    }
-    else if(temp >0)
-    {
-        self.lblRoupa.text = @"Camiseta";
-        self.lblBlusao.text =@"Casaco Leve";
-        self.lblCasaco.text =@"";
-        self.lblCalca.text = @"Calca Jeans ou Bermuda";
-        self.lblGorro.text = @"";
-        self.lblLuva.text = @"";
-    }
+
+        self.lblTemp.text = [NSString stringWithFormat:@"%.1f",grauReal];
+        self.lblSensTerm.text = [NSString stringWithFormat:@"%.1f",celsius];
+        float temp = celsius;
+        if (temp <0) {
+            self.lblRoupa.text = @"UnderWear ou segunda pele";
+            self.lblBlusao.text =@"Fleece";
+            self.lblCasaco.text =@"Casaco Impermeável ou corta vento";
+            self.lblCalca.text = @"Calca Impermeável";
+            self.lblGorro.text = @"Gorro";
+            self.lblLuva.text = @"Luva";
+            
+        }
+        else if((temp <15)&&(temp >0))
+        {
+            self.lblRoupa.text = @"Blusão";
+            self.imgCamisa.image = [UIImage imageNamed:@"camisa"];
+            self.lblBlusao.text =@"Casaco Pesado";
+            self.imgCasaco.image = [UIImage imageNamed:@"casaco"];
+            self.lblCasaco.text =@"";
+            self.lblCalca.text = @"Calca ";
+            self.imgcalca.image =[UIImage imageNamed:@"calça"];
+            self.lblGorro.text = @"Gorro Pegado";
+            self.imgGorro.image = [UIImage imageNamed:@"gorro"];
+            self.lblLuva.text = @"";
+        }
     
+  }
+
     
+
+
+-(void)getLocations
+{
+    
+    self.locationManager = [[CLLocationManager alloc]init];
+    self.locationManager.delegate = self;
+    self.locationManager.distanceFilter = kCLHeadingFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    NSLog(@"%f Latitude",self.latitude);
+    NSLog(@"%flongitude",self.longitude);
+    
+}
+
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"error");
+}
+
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *location = [[CLLocation alloc]init];
+    location = [locations lastObject];
+    ALIJSON *getlat = [[ALIJSON alloc]init];
+    self.latitude = location.coordinate.latitude;
+    self.longitude = location.coordinate.longitude;
+    getlat.latitude = self.latitude;
+    getlat.longitude = self.longitude;
+    NSLog(@"%f Latitude",self.latitude);
+    NSLog(@"%flongitude",self.longitude);
+    
+    NSError *error;
+    NSString *str = [NSString stringWithFormat:@"https://api.forecast.io/forecast/2f1c35dd930d9bc505e6399e60f3e4a7/%f,%f",self.latitude,self.longitude];
+    NSURL *url =[NSURL URLWithString:str];
+    NSData *dataJson = [NSData dataWithContentsOfURL:url];
+    getlat.getJson = [NSJSONSerialization JSONObjectWithData:dataJson options:kNilOptions error:&error];
+    getlat.getTemp = [getlat.getJson valueForKey:@"currently"];
+    getlat.strTemp = [[[getlat.getJson valueForKey:@"currently"]valueForKey:@"temperature"]floatValue ];
+    getlat.windVelocity = [[[getlat.getJson valueForKey:@"currently"]valueForKey:@"windSpeed"] floatValue];
+    getlat.celsiusTemp = ((getlat.strTemp -32)/1.8);
+    getlat.sensTerm =( 33 +(10 *sqrt(getlat.windVelocity)+ 10.45 - getlat.windVelocity)*((getlat.celsiusTemp - 33)/22));
+    NSLog(@"%2.f",getlat.windVelocity);
+    NSLog(@"TEMPERATURA %.2f",getlat.sensTerm);
+    NSLog(@"%f LATITUDE",getlat.latitude);
+    celsius = getlat.sensTerm;
+    grauReal = getlat.celsiusTemp;
+    [self fillLabels];
+  
 }
 
 

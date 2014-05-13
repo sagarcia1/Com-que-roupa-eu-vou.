@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4D8BD91921E64100A84732 /* fundo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BD81921E64100A84732 /* fundo.png */; };
+		2B4D8BDC1921E8FC00A84732 /*  bolinha.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BDB1921E8FC00A84732 /*  bolinha.png */; };
+		2B4D8BE11921EE1E00A84732 /* camisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BDD1921EE1E00A84732 /* camisa.png */; };
+		2B4D8BE21921EE1E00A84732 /* casaco.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BDE1921EE1E00A84732 /* casaco.png */; };
+		2B4D8BE31921EE1E00A84732 /* gorro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BDF1921EE1E00A84732 /* gorro.png */; };
+		2B4D8BE41921EE1E00A84732 /* calça.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BE01921EE1E00A84732 /* calça.png */; };
 		825D3BBE192152C300CCD8E9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825D3BBD192152C300CCD8E9 /* CoreLocation.framework */; };
 		8288C94B191C167100F4E68D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8288C94A191C167100F4E68D /* Foundation.framework */; };
 		8288C94D191C167100F4E68D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8288C94C191C167100F4E68D /* CoreGraphics.framework */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B4D8BD81921E64100A84732 /* fundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fundo.png; sourceTree = "<group>"; };
+		2B4D8BDB1921E8FC00A84732 /*  bolinha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " bolinha.png"; sourceTree = "<group>"; };
+		2B4D8BDD1921EE1E00A84732 /* camisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camisa.png; sourceTree = "<group>"; };
+		2B4D8BDE1921EE1E00A84732 /* casaco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = casaco.png; sourceTree = "<group>"; };
+		2B4D8BDF1921EE1E00A84732 /* gorro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gorro.png; sourceTree = "<group>"; };
+		2B4D8BE01921EE1E00A84732 /* calça.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calça.png"; sourceTree = "<group>"; };
 		825D3BBD192152C300CCD8E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8288C947191C167100F4E68D /* Com que roupa eu vou..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Com que roupa eu vou..app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8288C94A191C167100F4E68D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +97,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B4D8BDA1921E64700A84732 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2B4D8BD81921E64100A84732 /* fundo.png */,
+				2B4D8BDB1921E8FC00A84732 /*  bolinha.png */,
+				2B4D8BDD1921EE1E00A84732 /* camisa.png */,
+				2B4D8BDE1921EE1E00A84732 /* casaco.png */,
+				2B4D8BDF1921EE1E00A84732 /* gorro.png */,
+				2B4D8BE01921EE1E00A84732 /* calça.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		8288C93E191C167100F4E68D = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +117,7 @@
 				8288C96F191C167100F4E68D /* Com que roupa eu vou.Tests */,
 				8288C949191C167100F4E68D /* Frameworks */,
 				8288C948191C167100F4E68D /* Products */,
+				2B4D8BDA1921E64700A84732 /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,9 +264,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4D8BDC1921E8FC00A84732 /*  bolinha.png in Resources */,
+				2B4D8BD91921E64100A84732 /* fundo.png in Resources */,
 				8288C963191C167100F4E68D /* Images.xcassets in Resources */,
+				2B4D8BE21921EE1E00A84732 /* casaco.png in Resources */,
 				8288C955191C167100F4E68D /* InfoPlist.strings in Resources */,
+				2B4D8BE31921EE1E00A84732 /* gorro.png in Resources */,
 				8288C95E191C167100F4E68D /* Main.storyboard in Resources */,
+				2B4D8BE41921EE1E00A84732 /* calça.png in Resources */,
+				2B4D8BE11921EE1E00A84732 /* camisa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

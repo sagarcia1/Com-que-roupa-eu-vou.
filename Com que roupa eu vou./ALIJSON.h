@@ -16,14 +16,12 @@
 @property float windVelocity;
 @property float celsiusTemp;
 @property float sensTerm;
-@property (nonatomic) CLLocationManager *locationManager;
-@property (nonatomic,strong) NSString *latitude;
-@property (nonatomic,strong) NSString *longitude;
-
+@property float latitude;
+@property float longitude;
 
 
 
 -(void)jsonFoursquare;
--(void)getLocations;
+
 
 @end

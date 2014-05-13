@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>81E36B99-8640-4E39-9F05-119817D25133</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Com que roupa eu vou.</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1AA8896C-EA89-46D9-896F-C26ACC499AE4</key>
+		<string>https://github.com/sagarcia1/Com-que-roupa-eu-vou..git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Com que roupa eu vou..xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1AA8896C-EA89-46D9-896F-C26ACC499AE4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sagarcia1/Com-que-roupa-eu-vou..git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1AA8896C-EA89-46D9-896F-C26ACC499AE4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1AA8896C-EA89-46D9-896F-C26ACC499AE4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Com-que-roupa-eu-vou.</string>
+		</dict>
+	</array>
+</dict>
+</plist>
