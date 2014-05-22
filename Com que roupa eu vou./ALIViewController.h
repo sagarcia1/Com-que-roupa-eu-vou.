@@ -10,6 +10,9 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface ALIViewController : UIViewController<CLLocationManagerDelegate>
+@property (strong, nonatomic) IBOutlet UIImageView *imgFundo;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *actSensTerm;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *actTempo;
 @property (strong, nonatomic) IBOutlet UIImageView *imgExtra;
 @property (strong, nonatomic) IBOutlet UIImageView *imgCachecol;
 @property (strong, nonatomic) IBOutlet UIImageView *imgGorro;

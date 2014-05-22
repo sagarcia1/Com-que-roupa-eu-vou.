@@ -38,16 +38,6 @@
         self.lblSensTerm.text = [NSString stringWithFormat:@"%.1f",celsius];
         float temp = celsius;
         if (temp <0) {
-            self.lblRoupa.text = @"UnderWear ou segunda pele";
-            self.lblBlusao.text =@"Fleece";
-            self.lblCasaco.text =@"Casaco Impermeável ou corta vento";
-            self.lblCalca.text = @"Calca Impermeável";
-            self.lblGorro.text = @"Gorro";
-            self.lblLuva.text = @"Luva";
-            
-        }
-        else if((temp <15)&&(temp >0))
-        {
             self.lblRoupa.text = @"Blusão";
             self.imgCamisa.image = [UIImage imageNamed:@"camisa"];
             self.lblBlusao.text =@"Casaco Pesado";
@@ -58,6 +48,48 @@
             self.lblGorro.text = @"Gorro Pegado";
             self.imgGorro.image = [UIImage imageNamed:@"gorro"];
             self.lblLuva.text = @"";
+            
+        }
+        else if(temp <15)
+        {
+            self.lblRoupa.text = @"Blusão";
+            self.imgCamisa.image = [UIImage imageNamed:@"camisa"];
+            self.lblBlusao.text =@"Casaco Pesado";
+            self.imgCasaco.image = [UIImage imageNamed:@"casaco"];
+            self.lblCasaco.text =@"";
+            self.lblCalca.text = @"Calca ";
+            self.imgcalca.image =[UIImage imageNamed:@"calça"];
+            self.lblGorro.text = @"";
+            self.lblLuva.text = @"";
+           UIImage *fundo=[UIImage imageNamed:@"fundo"];
+            self.imgFundo.image = fundo;
+        }
+    
+        else if((temp >15)&&(temp < 25))
+        {
+            self.lblRoupa.text = @"Camisa Leve";
+            self.imgCamisa.image = [UIImage imageNamed:@"camisa"];
+            self.imgCasaco.image = [UIImage imageNamed:@"casaco"];
+            self.lblBlusao.text = @"Casaco Leve";
+            self.lblCalca.text = @"Calca ";
+            self.imgcalca.image =[UIImage imageNamed:@"calça"];
+            self.lblGorro.text = @"";
+            self.lblLuva.text = @"";
+            UIImage *fundo=[UIImage imageNamed:@"fundoOutono"];
+            self.imgFundo.image = fundo;
+            
+        }
+    
+        else if(temp >25)
+        {
+            self.lblRoupa.text = @"Regata";
+            self.imgCamisa.image = [UIImage imageNamed:@"regata"];
+            self.imgCasaco.image = [UIImage imageNamed:@"bermuda"];
+            self.lblCasaco.text =@"Bermuda";
+            UIImage *fundo=[UIImage imageNamed:@"fundoverao"];
+            self.imgFundo.image = fundo;
+            
+            
         }
     
   }
@@ -111,6 +143,13 @@
     NSLog(@"%f LATITUDE",getlat.latitude);
     celsius = getlat.sensTerm;
     grauReal = getlat.celsiusTemp;
+    if (celsius != 0)
+    {
+        [self.actSensTerm stopAnimating];
+        [self.actTempo stopAnimating];
+        [self.actTempo setHidden:YES];
+        [self.actSensTerm setHidden:YES];
+    }
     [self fillLabels];
   
 }
