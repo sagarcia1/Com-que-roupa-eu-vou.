@@ -10,6 +10,10 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface ALIViewController : UIViewController<CLLocationManagerDelegate>
+@property (strong, nonatomic) IBOutlet UILabel *grau2;
+@property (strong, nonatomic) IBOutlet UILabel *grau1;
+@property (strong, nonatomic) IBOutlet UILabel *lblSensacao;
+@property (weak, nonatomic) IBOutlet UILabel *lblCidade;
 @property (strong, nonatomic) IBOutlet UIImageView *imgFundo;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *actSensTerm;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *actTempo;
@@ -28,6 +32,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblGorro;
 @property (weak, nonatomic) IBOutlet UILabel *lblLuva;
 @property (nonatomic) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UIImageView *imgBolinha;
 @property float latitude;
 @property float longitude;
 @property (nonatomic,strong) NSString *str;

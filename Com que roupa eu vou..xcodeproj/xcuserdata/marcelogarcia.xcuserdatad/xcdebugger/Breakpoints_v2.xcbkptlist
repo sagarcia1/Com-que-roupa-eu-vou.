@@ -10,12 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Com que roupa eu vou./ALIJSON.m"
-            timestampString = "421617488.540829"
+            timestampString = "425922244.313312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-jsonFoursquare"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-jsonFoursquare:andLong:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Com que roupa eu vou./ALIViewController.m"
+            timestampString = "426621992.791068"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-pushNotifications"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -14,7 +14,6 @@
 		2B4D8BE31921EE1E00A84732 /* gorro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BDF1921EE1E00A84732 /* gorro.png */; };
 		2B4D8BE41921EE1E00A84732 /* calça.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4D8BE01921EE1E00A84732 /* calça.png */; };
 		2B9DCA4A192DBDCA00F9C9D2 /* bermuda.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DCA47192DBDCA00F9C9D2 /* bermuda.png */; };
-		2B9DCA4B192DBDCA00F9C9D2 /* blusaopng in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DCA48192DBDCA00F9C9D2 /* blusaopng */; };
 		2B9DCA4C192DBDCA00F9C9D2 /* regata.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DCA49192DBDCA00F9C9D2 /* regata.png */; };
 		2B9DCA51192DBF9F00F9C9D2 /* fundoOutono.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DCA4F192DBF9F00F9C9D2 /* fundoOutono.png */; };
 		2B9DCA52192DBF9F00F9C9D2 /* fundoVerao.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DCA50192DBF9F00F9C9D2 /* fundoVerao.png */; };
@@ -34,6 +33,9 @@
 		8288C974191C167100F4E68D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8288C972191C167100F4E68D /* InfoPlist.strings */; };
 		8288C976191C167100F4E68D /* Com_que_roupa_eu_vou_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8288C975191C167100F4E68D /* Com_que_roupa_eu_vou_Tests.m */; };
 		8288C981191C16C700F4E68D /* ALIJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8288C980191C16C700F4E68D /* ALIJSON.m */; };
+		82CAE97C196DB85F009D4DFD /* blusaopng.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CAE97B196DB85F009D4DFD /* blusaopng.png */; };
+		82CAE982196DBAB1009D4DFD /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CAE97F196DBAB1009D4DFD /* FBShimmeringView.m */; };
+		82CAE983196DBAB1009D4DFD /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CAE981196DBAB1009D4DFD /* FBShimmeringLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,6 @@
 		2B4D8BDF1921EE1E00A84732 /* gorro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gorro.png; sourceTree = "<group>"; };
 		2B4D8BE01921EE1E00A84732 /* calça.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calça.png"; sourceTree = "<group>"; };
 		2B9DCA47192DBDCA00F9C9D2 /* bermuda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bermuda.png; sourceTree = "<group>"; };
-		2B9DCA48192DBDCA00F9C9D2 /* blusaopng */ = {isa = PBXFileReference; lastKnownFileType = file; path = blusaopng; sourceTree = "<group>"; };
 		2B9DCA49192DBDCA00F9C9D2 /* regata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = regata.png; sourceTree = "<group>"; };
 		2B9DCA4F192DBF9F00F9C9D2 /* fundoOutono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fundoOutono.png; sourceTree = "<group>"; };
 		2B9DCA50192DBF9F00F9C9D2 /* fundoVerao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fundoVerao.png; sourceTree = "<group>"; };
@@ -80,6 +81,12 @@
 		8288C975191C167100F4E68D /* Com_que_roupa_eu_vou_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Com_que_roupa_eu_vou_Tests.m; sourceTree = "<group>"; };
 		8288C97F191C16C700F4E68D /* ALIJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIJSON.h; sourceTree = "<group>"; };
 		8288C980191C16C700F4E68D /* ALIJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALIJSON.m; sourceTree = "<group>"; };
+		82CAE97B196DB85F009D4DFD /* blusaopng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blusaopng.png; sourceTree = "<group>"; };
+		82CAE97D196DBAB1009D4DFD /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		82CAE97E196DBAB1009D4DFD /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		82CAE97F196DBAB1009D4DFD /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		82CAE980196DBAB1009D4DFD /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		82CAE981196DBAB1009D4DFD /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +124,11 @@
 				2B4D8BDF1921EE1E00A84732 /* gorro.png */,
 				2B4D8BE01921EE1E00A84732 /* calça.png */,
 				2B9DCA47192DBDCA00F9C9D2 /* bermuda.png */,
-				2B9DCA48192DBDCA00F9C9D2 /* blusaopng */,
 				2B9DCA49192DBDCA00F9C9D2 /* regata.png */,
 				2B9DCA4F192DBF9F00F9C9D2 /* fundoOutono.png */,
 				2B9DCA50192DBF9F00F9C9D2 /* fundoVerao.png */,
+				82CAE97B196DB85F009D4DFD /* blusaopng.png */,
+				82CAE984196DBABE009D4DFD /* shimering */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -200,6 +208,18 @@
 				8288C972191C167100F4E68D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82CAE984196DBABE009D4DFD /* shimering */ = {
+			isa = PBXGroup;
+			children = (
+				82CAE97D196DBAB1009D4DFD /* FBShimmering.h */,
+				82CAE97E196DBAB1009D4DFD /* FBShimmeringView.h */,
+				82CAE97F196DBAB1009D4DFD /* FBShimmeringView.m */,
+				82CAE980196DBAB1009D4DFD /* FBShimmeringLayer.h */,
+				82CAE981196DBAB1009D4DFD /* FBShimmeringLayer.m */,
+			);
+			name = shimering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,9 +308,9 @@
 				2B4D8BE21921EE1E00A84732 /* casaco.png in Resources */,
 				2B9DCA4C192DBDCA00F9C9D2 /* regata.png in Resources */,
 				8288C955191C167100F4E68D /* InfoPlist.strings in Resources */,
-				2B9DCA4B192DBDCA00F9C9D2 /* blusaopng in Resources */,
 				2B4D8BE31921EE1E00A84732 /* gorro.png in Resources */,
 				8288C95E191C167100F4E68D /* Main.storyboard in Resources */,
+				82CAE97C196DB85F009D4DFD /* blusaopng.png in Resources */,
 				2B4D8BE41921EE1E00A84732 /* calça.png in Resources */,
 				2B4D8BE11921EE1E00A84732 /* camisa.png in Resources */,
 			);
@@ -311,9 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CAE983196DBAB1009D4DFD /* FBShimmeringLayer.m in Sources */,
 				8288C981191C16C700F4E68D /* ALIJSON.m in Sources */,
 				8288C961191C167100F4E68D /* ALIViewController.m in Sources */,
 				8288C957191C167100F4E68D /* main.m in Sources */,
+				82CAE982196DBAB1009D4DFD /* FBShimmeringView.m in Sources */,
 				8288C95B191C167100F4E68D /* ALIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

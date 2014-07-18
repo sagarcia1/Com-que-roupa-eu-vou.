@@ -18,18 +18,19 @@
 @implementation ALIJSON
 
 
--(void)jsonFoursquare
+-(BOOL)jsonFoursquare:(float)latitude
+              andLong:(float)longitude
 {
      {
         NSError *error;
-         ALIViewController *getlat = [[ALIViewController alloc]init];
-         self.latitude = getlat.latitude;
-         self.longitude = getlat.longitude;
+         self.latitude = latitude;
+         self.longitude = longitude;
         //NSString *str = @"https://api.forecast.io/forecast/2f1c35dd930d9bc505e6399e60f3e4a7/-30.043481,%20-51.213194";
-        NSString *str = [NSString stringWithFormat:@"https://api.forecast.io/forecast/2f1c35dd930d9bc505e6399e60f3e4a7/%f,%f",getlat.latitude,getlat.longitude];
+        NSString *str = [NSString stringWithFormat:@"https://api.forecast.io/forecast/2f1c35dd930d9bc505e6399e60f3e4a7/%f,%f",latitude,longitude];
         NSURL *url =[NSURL URLWithString:str];
         NSData *dataJson = [NSData dataWithContentsOfURL:url];
         self.getJson = [NSJSONSerialization JSONObjectWithData:dataJson options:kNilOptions error:&error];
+          NSLog(@"%@ string URL",self.getJson);
         self.getTemp = [self.getJson valueForKey:@"currently"];
         self.strTemp = [[[self.getJson valueForKey:@"currently"]valueForKey:@"temperature"]floatValue ];
         self.windVelocity = [[[self.getJson valueForKey:@"currently"]valueForKey:@"windSpeed"] floatValue];
@@ -38,10 +39,11 @@
         self.sensTerm =( 33 +(10 *sqrt(self.windVelocity)+ 10.45 - self.windVelocity)*((self.celsiusTemp - 33)/22));
         NSLog(@"%2.f",self.windVelocity);
         NSLog(@"%f LATITUDE",self.latitude);
+         return true;
         
     }
 
-    
+    return false;
 }
 
 

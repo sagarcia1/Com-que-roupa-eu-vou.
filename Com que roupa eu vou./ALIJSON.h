@@ -21,7 +21,9 @@
 
 
 
--(void)jsonFoursquare;
+
+-(BOOL)jsonFoursquare:(float)latitude
+              andLong:(float)longitude;
 
 
 @end
